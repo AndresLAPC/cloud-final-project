@@ -25,7 +25,6 @@ const App = () => {
   p.ping("http://google.com", function (err, data) {
     // Also display error if err is returned.
     if (err) {
-      console.log("error de conexión");
       setNetError(true);
     }
     console.log(data);
